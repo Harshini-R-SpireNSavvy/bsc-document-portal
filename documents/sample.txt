@@ -1,0 +1,300 @@
+Agreement Introduction 
+
+Agreement ID: AGR-2024-001 
+Agreement Date: 01 April 2024 
+
+This Airport Operations Services Agreement ("Agreement") is entered into on 01 April 2024, between: 
+
+Client: 
+SkyBridge Aviation Services Ltd. 
+1200 Aviation Plaza, Chicago, IL 60666, USA 
+
+Vendor: 
+Global Airport Operations Pvt. Ltd. 
+45 Terminal Operations Park, Bangalore, Karnataka, India 
+
+ 
+
+1. Scope of Services 
+
+The Service Provider agrees to deliver airport operational support services including: 
+
+Domestic arrival handling support 
+
+International arrival support 
+
+Baggage make-up area operations 
+
+Baggage claim belt usage services 
+
+Terminal check-in counter access 
+
+Boarding gate usage 
+
+Passenger handling support 
+
+Ground operations coordination 
+
+Common-use terminal equipment access 
+
+Aircraft landing support services 
+
+These services will be delivered at: 
+
+Location: Chicago O’Hare International Airport 
+Airport Code: ORD 
+Terminal: Terminal 5 
+
+Shape 
+
+2. Agreement Period 
+
+Start Date: 01 April 2024 
+End Date: 31 March 2025 
+
+Shape 
+
+3. Pricing Structure 
+
+Service 
+
+Unit 
+
+Rate (USD) 
+
+Domestic Arrival Support 
+
+per flight 
+
+320 
+
+International Arrival Support 
+
+per flight 
+
+450 
+
+Baggage Make-up Area Usage 
+
+per hour 
+
+110 
+
+Baggage Claim Belt Usage 
+
+per hour 
+
+95 
+
+Check-in Counter Usage 
+
+per counter/hour 
+
+70 
+
+Gate Usage 
+
+per gate/hour 
+
+150 
+
+Ground Operations Support 
+
+per flight 
+
+200 
+
+Aircraft Landing Coordination 
+
+per landing 
+
+600 
+
+Shape 
+
+4. Billing Terms 
+Billing Method 
+
+The Service Provider shall invoice the Client on a monthly basis for all services provided during the applicable billing period. 
+
+Service charges will be calculated according to the pricing structure defined in this Agreement and will be based on actual operational usage including: 
+
+Number of flights handled 
+
+Terminal and facility usage hours 
+
+Aircraft landing coordination activities 
+
+Ground operations support services provided 
+
+All services will be documented through operational service reports and activity logs, which may be used by the Client for verification of invoice amounts. 
+
+Invoices shall be issued at the end of each billing period and shall include detailed service descriptions, quantities, unit rates, and total charges. 
+
+ 
+
+Billing frequency: Monthly 
+
+Payment terms: Net 30 days 
+
+Currency: USD 
+
+Late payment fee: 2% per month 
+
+Tax ID: 29AABCG1234K1Z5 
+
+5. Service Reporting 
+
+The Provider will submit operational reports including: 
+
+Flight numbers handled 
+
+Arrival / departure timestamps 
+
+Equipment usage logs 
+
+Passenger service activity records 
+
+Terminal usage hours 
+
+ 
+
+6. Termination Clause 
+
+Either party may terminate this agreement with 30 days written notice. 
+
+ 
+
+7. Governing Law 
+
+This agreement shall be governed under the laws of the State of Illinois, USA. 
+
+ 
+
+Authorized Signatories 
+
+Client Representative 
+Name: Michael Carter 
+Designation: Operations Director 
+
+Service Provider Representative 
+Name: Rakesh Menon 
+Designation: Managing Director 
+
+ 
+
+ 
+
+Item No 
+
+Service Category 
+
+Service Description 
+
+Aircraft Type 
+
+Unit of Measure 
+
+Rate (USD) 
+
+Billing Trigger / Condition 
+
+Notes 
+
+1 
+
+Ground Handling 
+
+Aircraft Turnaround Handling 
+
+A320 / A321 
+
+Per Departure 
+
+1,725.00 
+
+Charged for each aircraft departure handled 
+
+Includes standard ground handling services 
+
+2 
+
+Ground Handling 
+
+Technical Landing Handling (No Load Change) 
+
+A320 / A321 
+
+Per Event 
+
+862.50 
+
+Charged when aircraft lands without passenger/cargo load change 
+
+50% of standard departure rate 
+
+3 
+
+Ground Handling 
+
+Return to Ramp (No Load Change) 
+
+A320 / A321 
+
+Per Event 
+
+0.00 
+
+Aircraft returns to ramp without operational change 
+
+No additional charge 
+
+4 
+
+Equipment 
+
+Ground Power Unit (GPU) – Non Gate 
+
+All Aircraft 
+
+Per 30 Minutes 
+
+78.00 
+
+Charged when GPU equipment is connected off-gate 
+
+Additional equipment usage 
+
+5 
+
+Equipment 
+
+Air Conditioning Unit (ACU) 
+
+All Aircraft 
+
+Per 30 Minutes 
+
+64.00 
+
+Charged when cooling unit is provided to aircraft 
+
+Additional equipment usage 
+
+6 
+
+Equipment 
+
+Air Start Unit 
+
+All Aircraft 
+
+Per Event 
+
+98.00 
+
+Charged for each engine start assistance event 
+
+Per start event 
+
+ 
