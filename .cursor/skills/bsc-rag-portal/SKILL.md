@@ -53,6 +53,7 @@ Default login: `admin` / `admin123` (override via env).
 ## Deploy
 
 - Repo: push to GitHub; main file `app.py`.
+- **Hugging Face Spaces**: `README.md` has YAML frontmatter (`sdk: streamlit`); set Repository secrets `GROQ_API_KEY`, `APP_USERNAME`, `APP_PASSWORD`.
 - **Streamlit Community Cloud**: [share.streamlit.io](https://share.streamlit.io) + secrets from example file.
 - `deploy.ps1`: creates `bsc-document-portal` repo and pushes (requires `gh auth login`).
 

@@ -1,3 +1,15 @@
+---
+title: BSC Document Portal
+emoji: 📋
+colorFrom: blue
+colorTo: indigo
+sdk: streamlit
+sdk_version: "1.28.0"
+app_file: app.py
+pinned: false
+startup_duration_timeout: 45m
+---
+
 # BSC Document Portal
 
 Streamlit RAG chatbot for uploading documents (PDF, DOCX, TXT, XLSX) and asking questions with AI-assisted answers powered by [Groq](https://groq.com) and local embeddings.
@@ -9,6 +21,50 @@ Streamlit RAG chatbot for uploading documents (PDF, DOCX, TXT, XLSX) and asking 
 - Document insights report (summaries across all files)
 - Conversational Q&A with source-aware RAG
 - Light / dark theme (Settings popover, top right)
+
+## Deploy on Hugging Face Spaces (free)
+
+### Option A — Create Space from GitHub (recommended)
+
+1. Open [huggingface.co/new-space](https://huggingface.co/new-space)
+2. **Space name:** e.g. `bsc-document-portal`
+3. **License:** your choice
+4. **SDK:** Streamlit
+5. Under **Create from**, choose **Link to existing repository** (or duplicate after push)
+   - Repo: `Harshini-R-SpireNSavvy/bsc-document-portal`
+6. Click **Create Space**
+
+### Option B — Push this folder to a new HF Space
+
+```bash
+pip install huggingface_hub
+huggingface-cli login
+huggingface-cli repo create bsc-document-portal --type space --space_sdk streamlit
+git remote add hf https://huggingface.co/spaces/YOUR_USERNAME/bsc-document-portal
+git push hf main
+```
+
+### Add secrets (required)
+
+In your Space → **Settings** → **Repository secrets**, add:
+
+| Name | Value |
+|------|--------|
+| `GROQ_API_KEY` | Your key from [console.groq.com](https://console.groq.com) |
+| `APP_USERNAME` | Login username (e.g. `admin`) |
+| `APP_PASSWORD` | Strong password |
+
+Optional: `APP_USERS` = `user1:pass1,user2:pass2`
+
+Rebuild the Space after saving secrets.
+
+### HF notes
+
+- First build can take **10–20 minutes** (downloads embedding model).
+- Free **CPU basic** may be tight on RAM; upgrade hardware in Space settings if the app crashes.
+- Uploaded documents are **not persisted** across restarts on free Spaces.
+
+---
 
 ## Quick start (local)
 
@@ -28,8 +84,6 @@ APP_USERNAME=admin
 APP_PASSWORD=your_secure_password
 ```
 
-Get a free API key at [console.groq.com](https://console.groq.com).
-
 ### 3. Run the app
 
 ```bash
@@ -46,32 +100,14 @@ login_page.py       # Login / sign-up UI
 auth.py             # Authentication helpers
 rag.py              # Document loading, indexing, chat
 documents/          # Uploaded files (created automatically)
-.streamlit/         # Streamlit config and secrets example
+.streamlit/         # Streamlit config
 requirements.txt
-deploy.ps1          # Push to GitHub (optional)
 ```
 
-## Deploy on Streamlit Cloud (free)
+## Deploy on Streamlit Cloud (alternative)
 
-1. Fork or use this repo on GitHub.
-2. Go to [share.streamlit.io](https://share.streamlit.io) and sign in with GitHub.
-3. **Create app** → select this repo → **Main file:** `app.py` → **Branch:** `main`.
-4. Add **Secrets** (Settings → Secrets):
-
-```toml
-GROQ_API_KEY = "your_groq_api_key"
-APP_USERNAME = "admin"
-APP_PASSWORD = "your_strong_password"
-```
-
-5. Deploy. First build may take 5–10 minutes (embedding model download).
-
-### Push with script (Windows)
-
-```powershell
-gh auth login
-.\deploy.ps1
-```
+1. [share.streamlit.io](https://share.streamlit.io) → **Create app** → repo `bsc-document-portal` → `app.py`
+2. Add secrets (same variable names as HF above).
 
 ## Configuration
 
@@ -82,21 +118,10 @@ gh auth login
 | `APP_PASSWORD` | Default admin password (default: `admin123`) |
 | `APP_USERS` | Optional extra users: `user1:pass1,user2:pass2` |
 
-Sign-up stores additional users in `users.json` (local/ephemeral on free cloud hosts).
-
 ## Supported documents
 
-- PDF (`.pdf`)
-- Word (`.docx`)
-- Text (`.txt`)
-- Excel (`.xlsx`, `.xls`)
+- PDF (`.pdf`), Word (`.docx`), Text (`.txt`), Excel (`.xlsx`, `.xls`)
 
-## Notes
+## Security
 
-- **Free tier**: Uploaded files may not persist after app restart on Streamlit Cloud.
-- **Memory**: Embedding model loads at startup; allow time on first deploy.
-- **Security**: Never commit `.env` or real API keys. Rotate keys if exposed.
-
-## License
-
-Private / internal use — adjust as needed for your organization.
+Never commit `.env` or API keys. Rotate keys if exposed.
